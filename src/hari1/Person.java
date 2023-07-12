@@ -5,7 +5,24 @@ public class Person {
     String address;
     final String country = "Indonesia";
 
-    void sayHello(String paramName) {
-        System.out.println("Hello " + paramName + ", My name is " + name);
+    // contructor
+    Person(String name, String address) {
+        this.name = name;
+        this.address = address;
+    }
+
+    // contructor overloading
+    Person(String name) {
+        //memanggil constructor lain
+        this(name, null);
+    }
+
+    // contructor overloading
+    Person() {
+        this(null);
+    }
+
+    void sayHello(String name) {
+        System.out.println("Hello " + this.name + ", My name is " + name);
     }
 }

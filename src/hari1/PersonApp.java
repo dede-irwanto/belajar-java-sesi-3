@@ -3,9 +3,7 @@ package hari1;
 public class PersonApp {
     public static void main(String[] args) {
         // membuat object -> menggunakan kata kunci new
-        var person1 =  new Person();
-        person1.name = "Dede Irwanto";
-        person1.address = "Kotamobagu";
+        var person1 =  new Person("Dede", "Bolmong");
 
         System.out.println(person1.name);
         System.out.println(person1.address);
@@ -13,12 +11,11 @@ public class PersonApp {
 
         person1.sayHello("Eka");
 
-        Person person2 = new Person();
+        Person person2 = new Person("Eka");
 
         Person person3;
         person3 = new Person();
-
-        person3.name ="Joko";
+        person3.name = "Deeva";
         person3.sayHello("Eka");
 
 
