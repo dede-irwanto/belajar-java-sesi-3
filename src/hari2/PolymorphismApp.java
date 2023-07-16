@@ -20,6 +20,15 @@ public class PolymorphismApp {
 
     // method polymorphism
     static void sayHello(Employee employee) {
-        System.out.println("Hello " + employee.name);
+        // type check and cast
+        if (employee instanceof VicePresident) { // type check
+            VicePresident vicePresident = (VicePresident) employee; //cast
+            System.out.println("Hello VP " + vicePresident.name);
+        } else if (employee instanceof Manager) { // type check
+            Manager manager = (Manager) employee; //cast
+            System.out.println("Hello Manager " + manager.name);
+        } else {
+            System.out.println("Hello " + employee.name);
+        }
     }
 }
