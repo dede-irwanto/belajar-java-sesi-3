@@ -1,5 +1,6 @@
 package hari3.data;
 
+//multiple implement interface
 public class Avanza implements Car, IsMaintenance {
     @Override
     public void drive() {
