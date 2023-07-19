@@ -1,4 +1,4 @@
-package util;
+package hari3.util;
 
 public class MathUtil {
 //    static method

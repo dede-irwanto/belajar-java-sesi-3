@@ -3,7 +3,7 @@ package hari3.application;
 import hari3.data.Application;
 import hari3.data.Constant;
 import hari3.data.Country;
-import util.MathUtil;
+import hari3.util.MathUtil;
 
 public class StaticApp {
     public static void main(String[] args) {
